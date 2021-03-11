@@ -91,7 +91,7 @@ public class FirstTaskSolution implements FirstTask {
                     curNum *= 10;
                 }
                 curNum += (s.charAt(i) - 48);
-            } else if (s.charAt(i) == ' ' && !isNum(s.charAt(i - 1))) {
+            } else if (s.charAt(i) == ' ' && isNum(s.charAt(i - 1))) {
                 arrNum.addLast(curNum);
                 curNum = 0;
             }
